@@ -36,12 +36,7 @@ email: clobos@usp.br
 institute: Universidade de São Paulo
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, 
-                      eval = FALSE,
-                      message = FALSE,
-                      warning = FALSE)
-```
+
 
 
 ## What is R?
@@ -112,20 +107,23 @@ Used by millions of people weekly, the **RStudio integrated development environm
 
 ## Install Packages from Repositories or Local Files
 
-```{r}
+
+```r
 install.packages("tidyverse")
 ```
 
 ## Loading/Attaching and Listing of Packages
 
-```{r}
+
+```r
 library(tidyverse)
 citation("tidyverse")
 ```
 
 ## List Objects (ggplot2 example)
 
-```{r}
+
+```r
 ls("package:ggplot2")
 citation("ggplot2")
 ```
@@ -133,7 +131,8 @@ citation("ggplot2")
 
 ## Example of dplyr R package
 
-```{r}
+
+```r
 library(dplyr)
 starwars %>% 
   select(homeworld, height, mass) 
@@ -141,11 +140,14 @@ starwars %>%
 
 ## Example of ggplot2 R package 
 
-```{r, eval=TRUE}
+
+```r
 library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + 
   geom_point()
 ```
+
+![](slides_UFSCar_files/figure-slidy/unnamed-chunk-5-1.png)<!-- -->
 
 ## Rmarkdown from Rstudio
 
